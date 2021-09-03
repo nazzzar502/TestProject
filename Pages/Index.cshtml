@@ -2,10 +2,46 @@
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
+     var startpattern = new int[ ] {1,3,4,8,2,7,2,1,4,6,7,1,4,6};
+     var result = new int[14];
+     void GreedyAlgorithm()
+        {
+//finding a biggest number in array and transfering it to result array
+            for(int i = 0; i<14; i++)
+            {
+           
+            }
+// creating array without that number 
+            foreach(int element in array)   
+            {
+
+            }       
+        }
+
+     string ArrayToString(int []array)
+     {
+         var output = new string("");
+
+         foreach(int element in array)
+         {
+            output += String.Concat( element.ToString() );
+         }
+         return output;
+     }
+
+        GreedyAlgorithm();
+        string someoutput = ArrayToString(somenumber);
+        string anotheroutput = ArrayToString(anothernumber);
+        
+   
 }
+
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-    <h1> I am new changes in test project <h1>
+    <h1> Starting pattern is <h1>
+    @someoutput
+    <h1>the biggest number is <h1>
+    @anotheroutput
 </div>
